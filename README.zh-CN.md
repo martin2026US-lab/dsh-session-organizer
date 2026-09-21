@@ -46,8 +46,10 @@ Harness `0.1.6-alpha.2` 暂未公开“关闭单个服务端会话”的接口�
 从 GitHub 安装：
 
 ```powershell
-dsh plugin --profile web add github:martin2026US-lab/dsh-session-organizer
+dsh plugin --profile web add github:martin2026US-lab/dsh-session-organizer#v0.1.0
 ```
+
+版本标签可避免 `main` 的后续改动悄悄改变已安装的发布版本。对审计要求较高的安装，可以把 `v0.1.0` 替换为 Release 页面显示的完整提交 SHA。
 
 从本地源码安装：
 

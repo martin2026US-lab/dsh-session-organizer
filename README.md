@@ -44,8 +44,10 @@ Permanent deletion cannot be undone. Back up important sessions.
 From GitHub:
 
 ```powershell
-dsh plugin --profile web add github:martin2026US-lab/dsh-session-organizer
+dsh plugin --profile web add github:martin2026US-lab/dsh-session-organizer#v0.1.0
 ```
+
+The version tag keeps future changes to `main` from silently changing an installed release. For an audit-sensitive installation, replace `v0.1.0` with the full commit SHA shown on the release page.
 
 Local source:
 
