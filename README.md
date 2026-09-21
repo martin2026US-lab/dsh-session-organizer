@@ -10,7 +10,7 @@ A compact, unofficial session-organizing plugin for DeepSeek Harness Web. It add
 
 | Session actions | Guarded permanent deletion |
 | --- | --- |
-| ![Session menu with the Pin action](docs/images/session-actions.png) | ![Permanent deletion confirmation dialog](docs/images/delete-confirmation.png) |
+| ![Session menu with the Pin action](docs/images/session-actions-en.png) | ![Permanent deletion confirmation dialog](docs/images/delete-confirmation-en.png) |
 
 ## Features
 

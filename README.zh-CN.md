@@ -10,7 +10,7 @@
 
 | 会话二级菜单 | 永久删除安全确认 |
 | --- | --- |
-| ![带有置顶操作的会话菜单](docs/images/session-actions.png) | ![永久删除确认框](docs/images/delete-confirmation.png) |
+| ![带有置顶操作的会话菜单](docs/images/session-actions-zh.png) | ![永久删除确认框](docs/images/delete-confirmation-zh.png) |
 
 ## 功能
 
