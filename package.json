@@ -1,0 +1,68 @@
+{
+  "name": "dsh-session-organizer",
+  "version": "0.1.0",
+  "description": "Compact pinned-session and archived-session deletion controls for DeepSeek Harness Web.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "docs/images",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=24",
+    "dsh": "0.1.6-alpha.2"
+  },
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/client.js && node --check lib/model.js",
+    "test": "node --test test/*.test.js",
+    "verify": "npm run check && npm test",
+    "prepack": "npm run verify"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "session",
+    "pin",
+    "archive"
+  ],
+  "author": "martin2026US-lab",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin2026US-lab/dsh-session-organizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/martin2026US-lab/dsh-session-organizer/issues"
+  },
+  "homepage": "https://github.com/martin2026US-lab/dsh-session-organizer#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}

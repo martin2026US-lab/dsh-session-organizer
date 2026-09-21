@@ -1,0 +1,5 @@
+# One dual-face Host/Client plugin row for the DeepSeek Harness Web profile.
+- insert:
+    - id: dsh-session-organizer
+      name: dsh-session-organizer
+      config: {}
